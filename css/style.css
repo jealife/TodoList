@@ -130,7 +130,7 @@ body{
         height: 3rem;
         padding: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #c4c6f8;
+        color: #f6f6ff;
         background-color: #b9bbff;
 
 
@@ -138,7 +138,7 @@ body{
 
     #text {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #c4c6f8 ;
+        color: #f6f6ff ;
     }
 
     #add {
