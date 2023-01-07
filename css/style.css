@@ -1,0 +1,181 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    
+    background: #8a5bc7;
+    background: linear-gradient(0deg, #080a3f 0%, #05072c 100%);
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+   
+    #myTodoWebapp {
+        display: grid;
+        width: 100%;
+        height: 250px;
+        grid-template-areas:
+            "head head"
+            "main main"
+            "nav  nav";
+        grid-template-rows: 50px 1fr 30px;
+        grid-template-columns: 150px 1fr;
+    }
+
+    #myTodoWebapp {
+        min-height: 100vh;
+    }
+
+    #myTodoWebapp>header {
+        grid-area: head;
+    }
+
+    #myTodoWebapp>nav {
+        grid-area: nav;
+        background: transparent;
+    }
+
+    #myTodoWebapp>main {
+        grid-area: main;
+        min-height: 100vh;
+    }
+
+    .i {
+        color: #e1e2ff !important;
+
+    }
+
+    #header {
+        position: fixed;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlePage {
+        display: block;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #nav {
+        position: absolute;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        background: #05072c;
+        background: linear-gradient(0deg, #020e0e 0%, #080a3f 100%);
+    
+    }
+
+    .navbott {
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .header {
+        display: flex;
+        padding: 1rem 2rem 1rem 2rem;
+
+    }
+
+    .container {
+        margin: 1rem auto 5rem auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 100%; 
+        box-shadow:0px 2px 5rem #2d33e023 ;
+        background: #8a5bc7;
+        background: linear-gradient(0deg, #080a3f 0%, #05072c 100%);
+        }
+
+    .container {
+        border-top-left-radius:50px ;
+        border-top-right-radius:50px ;
+    }
+    #list{
+        margin-top: 120vh;
+        scroll-behavior: smooth;
+        transition: 1.5s;
+    }
+    .form {
+        border-radius: 25px;
+        padding: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+
+    .form-control {
+        margin-top: 2rem !important;
+        border: none !important;
+        border-radius: 25px !important;
+        font-size: 1rem !important;
+
+    }
+
+    #title {
+        height: 3rem;
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #c4c6f8;
+        background-color: #b9bbff;
+
+
+    }
+
+    #text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #c4c6f8 ;
+    }
+
+    #add {
+        border: none;
+        text-align: center;
+        background-color: #1d3b8ffb;
+        box-shadow:15px 15px 5rem #2d33e0 ;
+        font-size: 1.5em;
+        width: 5em;
+        height: 2em;
+        color: #ffffff !important;
+        border-radius: 50px;
+        top: -1.2em;
+        position: relative;
+        font-weight: 500;
+    }
+    #add{
+        cursor: pointer;
+    }
+
+    textarea {
+
+        padding: 1rem;
+        height: 20rem;
+        
+    }
+
+    h1 {
+        color: #6c4491;
+    }
+
+    h2,
+    p,
+    h3 {
+        color: #b4c5f771;
+        font-weight: 600;
+    }
+
+
+}
