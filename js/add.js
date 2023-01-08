@@ -75,6 +75,5 @@ closeTaskList.addEventListener("click", function closelist () {
     taskTop.style.marginTop = '100vh';
     home.style.display='block';
     add.style.display='none'
-    newtask.style.display='none';
     start.style.display='block'
 });
