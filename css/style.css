@@ -2,19 +2,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-body{
-    
+
+body {
+
     background: #8a5bc7;
     background: linear-gradient(0deg, #080a3f 0%, #05072c 100%);
     scroll-behavior: smooth;
     overflow-y: hidden;
-    
 
-    
+
+
 }
 
 @media only screen and (max-width: 600px) {
-   
+
     #myTodoWebapp {
         display: grid;
         width: 100%;
@@ -72,7 +73,7 @@ body{
         width: 100%;
         background: #05072c;
         background: linear-gradient(0deg, #020e0e 0%, #080a3f 100%);
-    
+
     }
 
     .navbott {
@@ -87,6 +88,7 @@ body{
     .header {
         display: flex;
         padding: 1rem 2rem 1rem 2rem;
+        justify-content: space-between;
 
     }
 
@@ -95,21 +97,23 @@ body{
         display: flex;
         justify-content: center;
         text-align: center;
-        height: 100%; 
-        box-shadow:0px 2px 5rem #2d33e023 ;
+        height: 100%;
+        box-shadow: 0px 2px 5rem #2d33e023;
         background: #8a5bc7;
         background: linear-gradient(0deg, #080a3f 0%, #05072c 100%);
-        }
+    }
 
     .container {
-        border-top-left-radius:50px ;
-        border-top-right-radius:50px ;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
     }
-    #list{
+
+    #list {
         margin-top: 120vh;
         scroll-behavior: smooth;
         transition: 1.5s;
     }
+
     .form {
         border-radius: 25px;
         padding: 1rem;
@@ -132,7 +136,7 @@ body{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #f6f6ff;
         background-color: #b9c9ff;
-        box-shadow:15px 15px 5rem #2d33e065 ;
+        box-shadow: 15px 15px 5rem #2d33e065;
 
 
 
@@ -140,15 +144,15 @@ body{
 
     #text {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #f6f6ff ;
-        box-shadow:15px 15px 5rem #2d33e056 ;
+        color: #f6f6ff;
+        box-shadow: 15px 15px 5rem #e2e2e256;
     }
 
-    #add {
+    .add,.start {
         border: none;
         text-align: center;
         background-color: #1d3b8ffb;
-        box-shadow:15px 15px 5rem #2d33e0 ;
+        box-shadow: 15px 15px 5rem #2d33e0;
         font-size: 1.5em;
         width: 5em;
         height: 2em;
@@ -158,15 +162,15 @@ body{
         position: relative;
         font-weight: 500;
     }
-    #add{
-        cursor: pointer;
-    }
+    /* #add{
+        display:none;
+    } */
 
     textarea {
 
         padding: 1rem;
         height: 20rem;
-        
+
     }
 
     h1 {
@@ -181,4 +185,43 @@ body{
     }
 
 
+    .item {
+        text-align: left;
+        background-color: #b9c9ff;
+        border-radius: 18px;
+        padding: 0 0.5rem 0.5rem;
+    }
+
+    .item h2 {
+        color: #020e0e;
+
+    }
+
+    .item p {
+        color: #080a3f;
+        font-weight: 500;
+
+    }
+
+    .del {
+        border: none;
+        width: 100%;
+        margin-top: 1rem;
+        background-color: transparent;
+        text-align: right;
+        color: #ff0101;
+    }
+
+    .listItems {
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        color: #b9c9ff;
+        display: none;
+    }
+    .active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

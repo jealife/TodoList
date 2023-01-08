@@ -35,10 +35,12 @@
       <div class="header">
         <h2 id="date">Date</h2>
 
-      </div>
-      <div class="titlePage">
+        <button id="listItems" class=" listItems">
+          <i class="fa-solid fa-rectangle-list fa-2xl"></i>
+        </button>
 
       </div>
+      
     </header>
     <main>
 
@@ -80,18 +82,43 @@
 
       <div class="container">
         <div class="form">
-          <div class="close-btn">
-            <button id="closeList" style="border: none; background-color: transparent; text-align: right; color:#b9c9ff;">
-              <i class="fa-solid fa-circle-xmark fa-xl"></i>
-            </button>
-          </div>
-          <div class="formulaire">
-            <input type="text" id="title" placeholder="Titre" class="form-control" class="i" required>
-            <textarea style="background-color: #b9c9ff;" name="" id="text" cols="45" class="form-control" rows="10"
-              class="i"></textarea>
+          <div class="taskElment">
+            <div class="close-btn">
+              <button id="closeTasklist" style="border: none; background-color: transparent; text-align: right; color:#b9c9ff;">
+                <i class="fa-solid fa-circle-xmark fa-xl"></i>
+              </button>
+            </div>
+            <h2>
+              Task list
+            </h2>
+            <br>
+            <div class="items">
+              
+              <div class="item">
+                <div class="close-btn">
+                  <button id="del" class="del">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+                <div id="item">
+                  <h2>
+                    Titre
+                  </h2>
+                  <p>
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                    previewing layouts and visual mockups.
 
+                  </p>
+
+                </div>
+
+
+              </div>
+            </div>
           </div>
+
         </div>
+      </div>
       </div>
       </div>
 
@@ -104,7 +131,8 @@
 
       <div class="navbott">
 
-        <button id="add" class="start"> Start </button>
+        <button id="start"  class="start"> Start </button>
+        <button id="add"  class="add"> Add </button>
 
       </div>
 
@@ -113,10 +141,10 @@
 
 
   </section>
-
-
-
   <script src="js/Start.js"></script>
+
+  <script src="js/add.js"></script>
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -129,6 +157,9 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
   <script src="js/date.js"> </script>
+
+
+  
 </body>
 
 </html>
