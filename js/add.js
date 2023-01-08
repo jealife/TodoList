@@ -32,7 +32,7 @@ add.addEventListener("click",function() {
 
     console.log(titre + " " + para)
     title.value="";
-    descript.value=";"
+    descript.value=""
 
 })
 
