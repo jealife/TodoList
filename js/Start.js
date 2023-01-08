@@ -19,7 +19,7 @@ taskList.style.marginTop='150vh';
 // close add task  interface
 closeAddTask.addEventListener("click", function closeadditem() {
     taskTop.style.marginTop = '150vh';
-    home.style.marginTop = '0';
+    home.style.marginTop = '2rem';
     add.style.display='none'
     start.style.display='block'
     start.style.transition = '1s';
@@ -28,7 +28,7 @@ closeAddTask.addEventListener("click", function closeadditem() {
 // close  list item
 closeTaskList.addEventListener("click", function closelist () {
     taskList.style.marginTop = '150vh';
-    home.style.marginTop = '0';
+    home.style.marginTop = '2rem';
     add.style.display='none'
     start.style.display='block'
     start.style.transition = '1s';
