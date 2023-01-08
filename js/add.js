@@ -43,7 +43,7 @@ add.addEventListener("click",function() {
     var contList=document.getElementById('items')
     var item = document.createElement('div')
     item.classList.add("item")
-    delbtn.classList.add("fa-solid ")
+    delbtn.classList.add("fa-solid")
     delbtn.classList.add("dfa-trashel")
     contList.appendChild(item)
     let titre = document.createElement("h2")
