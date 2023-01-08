@@ -17,6 +17,7 @@ taskList.style.marginTop='100vh';
 
 newtask.addEventListener("click", function(){
     start.style.display = 'none'
+    newtask.style.display='none';
     add.style.display='block'
     add.style.display = 'none';
     taskTop.style.marginTop = '0';
