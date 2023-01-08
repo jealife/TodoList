@@ -1,4 +1,4 @@
-var monthList=[
+var monthList = [
     'January',
     'February',
     'March',
@@ -12,15 +12,12 @@ var monthList=[
     'December'
 
 ];
-function dateShow(){
-    var dateGlobal=new Date();
-    var month=dateGlobal.getMonth();
-    month=monthList[month];
-
-    var day=dateGlobal.getUTCDay();
-
-
-    var date=document.getElementById('date');
-    date.innerHTML=month+", "+day;
+var dateGlobal = new Date();
+var day =dateGlobal.getDate();
+var month = dateGlobal.getMonth();
+month = monthList[month];
+function dateShow() {
+    var date = document.getElementById('date');
+    date.innerHTML = month+", "+day;
 
 }
