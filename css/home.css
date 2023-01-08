@@ -37,6 +37,15 @@ font-family: 'Poppins', sans-serif;
         flex: 1;
     }
 }
+
+.close-btn{
+    width: 100%;
+    text-align: right;
+}
+
 /* #home{
     display: none;
 } */
+#tasklist{
+    display: none;
+}
