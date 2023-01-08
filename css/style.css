@@ -148,7 +148,9 @@ body {
         box-shadow: 15px 15px 5rem #e2e2e256;
     }
 
-    .add,.start,.newtask {
+    .add,
+    .start,
+    .newtask {
         border: none;
         text-align: center;
         background-color: #1d3b8ffb;
@@ -162,6 +164,7 @@ body {
         position: relative;
         font-weight: 500;
     }
+
     /* .newtask{
         display: none;
     } */
@@ -208,11 +211,7 @@ body {
     }
 
     .del {
-        border: none;
-        width: 100%;
         margin-top: 1rem;
-        background-color: transparent;
-        text-align: right;
         color: #ff0101;
     }
 
@@ -223,12 +222,39 @@ body {
         color: #b9c9ff;
         display: none;
     }
-    .active{
+
+    .active {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    #closeTasklist {
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        color: #b9c9ff;
+    }
+    
+
+    #items {
+        overflow: scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    #items::-webkit-scrollbar {
+        width: 0.2rem;
+        background-color: transparent;
+    }
+
+    #items::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: #421072;
+    }
+
     #closeTasklist{
-        border: none; background-color: transparent; text-align: right; color:#b9c9ff;
+        float: right;
+        margin-left: 80vw;
     }
 }

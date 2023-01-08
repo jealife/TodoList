@@ -10,20 +10,19 @@ var descript = document.getElementById('text')
 var showlistetask=document.getElementById('listItems')
 var taskList = document.getElementById('tasklist');
 
-var newtask=document.getElementById('newtask')
-newtask.style.display='none';
+
 
 taskList.style.marginTop='100vh';
 
-newtask.addEventListener("click", function(){
-    start.style.display = 'none'
-    newtask.style.display='none';
-    add.style.display='block'
-    add.style.display = 'none';
-    taskTop.style.marginTop = '0';
-    taskList.style.marginTop = '100vh';
-    home.style.transition = '1.5s'
-})
+// newtask.addEventListener("click", function(){
+//     start.style.display = 'none'
+//     newtask.style.display='none';
+//     add.style.display='block'
+//     add.style.display = 'none';
+//     taskTop.style.marginTop = '0';
+//     taskList.style.marginTop = '100vh';
+//     home.style.transition = '1.5s'
+// })
 
 start.addEventListener("click", function () {
     // taskTop.style.display='flex'
@@ -39,16 +38,20 @@ start.addEventListener("click", function () {
 
 add.addEventListener("click",function() {
     // taskTop.style.display='flex'
+    var delbtn=document.createElement('i')
+    
     var contList=document.getElementById('items')
     var item = document.createElement('div')
     item.classList.add("item")
-    
+    delbtn.classList.add("fa-solid ")
+    delbtn.classList.add("dfa-trashel")
     contList.appendChild(item)
     let titre = document.createElement("h2")
     let para = document.createElement("p")
 
     titre.innerHTML = title.value;
     para.innerHTML = descript.value;
+    item.appendChild(delbtn)
     item.appendChild(titre)
     item.appendChild(para)
     
@@ -64,6 +67,7 @@ add.addEventListener("click",function() {
 
 showlistetask.addEventListener("click", function openList () {
     taskList.style.marginTop = '0';
+    taskTop.style.marginTop = '100vh';
     home.style.display='none';
     add.style.display='none'
     start.style.display='none'
@@ -72,7 +76,6 @@ showlistetask.addEventListener("click", function openList () {
 
 closeTaskList.addEventListener("click", function closelist () {
     taskList.style.marginTop = '100vh';
-    taskTop.style.marginTop = '100vh';
     home.style.display='block';
     add.style.display='none'
     start.style.display='block'
