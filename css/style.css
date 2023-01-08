@@ -148,7 +148,7 @@ body {
         box-shadow: 15px 15px 5rem #e2e2e256;
     }
 
-    .add,.start {
+    .add,.start,.newtask {
         border: none;
         text-align: center;
         background-color: #1d3b8ffb;
@@ -162,6 +162,9 @@ body {
         position: relative;
         font-weight: 500;
     }
+    /* .newtask{
+        display: none;
+    } */
     /* #add{
         display:none;
     } */
@@ -186,6 +189,7 @@ body {
 
 
     .item {
+        margin-top: 1.5rem;
         text-align: left;
         background-color: #b9c9ff;
         border-radius: 18px;
@@ -223,5 +227,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    #closeTasklist{
+        border: none; background-color: transparent; text-align: right; color:#b9c9ff;
     }
 }
