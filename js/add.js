@@ -26,14 +26,13 @@ add.addEventListener("click",function() {
     item.classList.add("item")
     var titre = document.createElement('h2')
     var para = document.createElement('p')
-    t = title.value;
-    p = descript.value;
-    items.appendChild(item)
-    item.appendChild(titre)
-    item.appendChild(para)
+    titre = title.value;
+    para = descript.value;
     
 
-    console.log(t + " " + p)
+    console.log(titre + " " + para)
+    title.value="";
+    descript.value=";"
 
 })
 
