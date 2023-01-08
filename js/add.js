@@ -67,7 +67,6 @@ showlistetask.addEventListener("click", function openList () {
     home.style.display='none';
     add.style.display='none'
     start.style.display='none'
-    newtask.style.display='block';
 });
 
 
